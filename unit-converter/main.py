@@ -8,58 +8,58 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-def convert_f_to_c(num: float) -> float:
+def convert_f_to_c(unit: float) -> float:
+    """
+    This function applies the formula to convert Fahrenheit units to Celsius.
+    :param unit: Unit to be converted in Fahrenheit
+    :return: Converted unit in Celsius
+    """
+    return (unit - 32) / 1.8
+
+
+def convert_c_to_f(unit: float) -> float:
     """
     TODO: Add docstrings
-    :param num:
+    :param unit:
     :return:
     """
-    return (num - 32) / 1.8
+    return (unit * 1.8) + 32
 
 
-def convert_c_to_f(num: float) -> float:
+def convert_miles_to_km(unit: float) -> float:
     """
     TODO: Add docstrings
-    :param num:
+    :param unit:
     :return:
     """
-    return (num * 1.8) + 32
+    return unit * 1.60934
 
 
-def convert_miles_to_km(num: float) -> float:
+def convert_km_to_miles(unit: float) -> float:
     """
     TODO: Add docstrings
-    :param num:
+    :param unit:
     :return:
     """
-    return num * 1.60934
+    return unit / 1.60934
 
 
-def convert_km_to_miles(num: float) -> float:
+def convert_lbs_to_kg(unit: float) -> float:
     """
     TODO: Add docstrings
-    :param num:
+    :param unit:
     :return:
     """
-    return num / 1.60934
+    return unit * 0.453592
 
 
-def convert_lbs_to_kg(num: float) -> float:
+def convert_kg_to_lbs(unit: float) -> float:
     """
     TODO: Add docstrings
-    :param num:
+    :param unit:
     :return:
     """
-    return num * 0.453592
-
-
-def convert_kg_to_lbs(num: float) -> float:
-    """
-    TODO: Add docstrings
-    :param num:
-    :return:
-    """
-    return num / 0.453592
+    return unit / 0.453592
 
 
 def temperature_menu() -> None:
