@@ -19,7 +19,7 @@ def convert_f_to_c(unit: float) -> float:
 
 def convert_c_to_f(unit: float) -> float:
     """
-    TODO: Add docstrings
+    "This functions takes a unit in Celsius and converts it to Fahrenheit"
     :param unit:
     :return:
     """
