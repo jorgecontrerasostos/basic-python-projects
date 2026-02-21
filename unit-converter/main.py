@@ -9,64 +9,79 @@ logger = logging.getLogger(__name__)
 
 
 def convert_f_to_c(unit: float) -> float:
-    """
-    This function applies the formula to convert Fahrenheit units to Celsius.
-    :param unit: Unit to be converted in Fahrenheit
-    :return: Converted unit in Celsius
+    """Converts a temperature value from Fahrenheit to Celsius.
+
+    Args:
+        unit: Temperature value in Fahrenheit.
+
+    Returns:
+        Temperature value converted to Celsius.
     """
     return (unit - 32) / 1.8
 
 
 def convert_c_to_f(unit: float) -> float:
-    """
-    "This functions takes a unit in Celsius and converts it to Fahrenheit"
-    :param unit:
-    :return:
+    """Converts a temperature value from Celsius to Fahrenheit.
+
+    Args:
+        unit: Temperature value in Celsius.
+
+    Returns:
+        Temperature value converted to Fahrenheit.
     """
     return (unit * 1.8) + 32
 
 
 def convert_miles_to_km(unit: float) -> float:
-    """
-    TODO: Add docstrings
-    :param unit:
-    :return:
+    """Converts a distance value from miles to kilometers.
+
+    Args:
+        unit: Distance value in miles.
+
+    Returns:
+        Distance value converted to kilometers.
     """
     return unit * 1.60934
 
 
 def convert_km_to_miles(unit: float) -> float:
-    """
-    TODO: Add docstrings
-    :param unit:
-    :return:
+    """Converts a distance value from kilometers to miles.
+
+    Args:
+        unit: Distance value in kilometers.
+
+    Returns:
+        Distance value converted to miles.
     """
     return unit / 1.60934
 
 
 def convert_lbs_to_kg(unit: float) -> float:
-    """
-    TODO: Add docstrings
-    :param unit:
-    :return:
+    """Converts a weight value from pounds to kilograms.
+
+    Args:
+        unit: Weight value in pounds.
+
+    Returns:
+        Weight value converted to kilograms.
     """
     return unit * 0.453592
 
 
 def convert_kg_to_lbs(unit: float) -> float:
-    """
-    TODO: Add docstrings
-    :param unit:
-    :return:
+    """Converts a weight value from kilograms to pounds.
+
+    Args:
+        unit: Weight value in kilograms.
+
+    Returns:
+        Weight value converted to pounds.
     """
     return unit / 0.453592
 
 
 def temperature_menu() -> None:
-    """
-    TODO: Add docstrings
-    :return:
-    """
+    """Displays the temperature conversion menu and handles user input."""
     print("1. C to F")
     print("2. F to C")
     print("3. Go Back")
@@ -84,10 +99,7 @@ def temperature_menu() -> None:
 
 
 def distance_menu() -> None:
-    """
-    TODO: Add docstrings
-    :return:
-    """
+    """Displays the distance conversion menu and handles user input."""
     print("1. Miles to KM")
     print("2. KM to Miles ")
     print("3. Go Back")
@@ -105,6 +117,7 @@ def distance_menu() -> None:
 
 
 def weight_menu() -> None:
+    """Displays the weight conversion menu and handles user input."""
     print("1. LBS TO KG")
     print("2. KG TO LBS")
     print("3. Go Back")
